@@ -1,30 +1,30 @@
-const distance = prompt("Quanti chilometri vuoi percorrere?")
-const eleSpan = document.getElementById("chilometri")
-eleSpan.innerHTML = distance;
+const PricePerKm = 0.21;
+const DiscountChildren = 20;
+const DiscountSenior = 40;
+const InputDistance = document.getElementById ("btn-distance")
+const InputAge = document.getElementById ("btn-age")
+const Inputuser = document.getElementById ("name-surname")
+const BtnCalc = document.querySelector ("btn-gen")
 
-let ticketwithsale;
+BtnCalc.addEventListener("click", function() {
 
-const age = parseInt(prompt("Quanti anni hai?"))
-const eleSpan2 = document.getElementById("età")
-eleSpan2.innerHTML = age;
-
-let ticketnosale = distance*0.21;
-const eleSpan3 = document.getElementById("ticketcost")
-eleSpan3.innerHTML = ticketnosale;
-
-
+const Distance = 100;
+const age = 32;
+const BasePrice = 21;
 
 
+let DiscountPercent = 0;
 if (age < 18) {
-    ticketwithsale = ticketnosale - (ticketnosale * 20 / 100)
-} else {
-  
+  DiscountPercent = DiscountChildren;
+}
+else if (age >= 65) {
+  DiscountPercent = DiscountSenior;
 }
 
-if (age > 65) {
-    ticketwithsale = ticketnosale - (ticketnosale * 40 / 100)
-  } else {
-    
-  }
-const elespan4 = document.getElementById ("ticketsales")
-elespan4.innerHTML = ticketwithsale;
+const Discount = 0;
+console.log(discount);
+
+let finalprice =
+
+})
+
